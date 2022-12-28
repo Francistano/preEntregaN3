@@ -1,0 +1,10 @@
+.h1 {
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-evenly;
+}
