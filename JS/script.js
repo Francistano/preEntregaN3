@@ -84,4 +84,10 @@ function cleanHTML (){
 
 // storage y json
 
-const comidas = []
+const comidas = ["papas fritas", "ensalada"];
+const aJson = JSON.stringify(comidas);
+localStorage.setItem("Comidas", aJson);
+
+const masComidas = JSON.parse(localStorage.getItem("Comidas"));
+masComidas.push("empanadas");
+localStorage.setItem("Comidas", JSON.stringify(masComidas));
