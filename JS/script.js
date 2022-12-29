@@ -80,3 +80,8 @@ productosCarrito.forEach((producto) => {
 function cleanHTML (){
     carrito.innerHTML = "";
 }
+
+
+// storage y json
+
+const comidas = []
