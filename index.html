@@ -16,47 +16,39 @@
   <body>
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button type="button" class="btn btn-primary">Primary</button>
+        <a class="navbar-brand" href="#">Comercio</a>
+        <button type="button" class="btn btn-primary"><a href="#carrito">Carrito</a></button>
       </div>
     </nav>
-    <p class="h1">Compre Mas!</p>
+    <h1 class="h1">Compre Mas!</h1>
     <div class="productos">
       <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">Hamburguesa.</h5>
+          <p class="card-text">Un disco de carne vacuna molida entre 2 panes redondeos espolvoreados con semillas de sesamo.</p>
+          <button class="btn btn-primary" id="cardBotton">Comprar</button>
         </div>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">Milanesa.</h5>
+          <p class="card-text">Una feta de carne vacuna ensobrado en huevo agitado y astillas de pan.</p>
+          <button class="btn btn-primary" id="cardBotton">Comprar</button>
         </div>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">Super Pancho.</h5>
+          <p class="card-text">Cilindro de carne de diversas fuentes embuelto en un pan alargado.</p>
+          <button class="btn btn-primary" id="cardBotton">Comprar</button>
         </div>
       </div>
     </div>
-    <form id:"">
+    <div>
+      <div id="carrito"></div>
+      <h3 class="h3">Formulario</h3>
+    </div>
+    <form id="formulario">
     <div class="mb-3">        
         <label for="exampleFormControlTextarea1" class="form-label">Nombre y Apellido</label>
         <input type= "text" placeholder="Nombre y Apellido" class="form-control" rows="3" id="nombre"></input>
@@ -64,14 +56,38 @@
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Email</label>
         <input type="email" class="form-control" id="email" placeholder="name@example.com" >
-      </div>
-    </form>
-
-      <div class="form-group">
-        <label class="col-form-label" for="inputDefault">Default input</label>
-        <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-      </div>
-
+      </div>    
+    <button type="submit" class="btn btn-primary">
+      Enviar
+    </button>
+  </form>
+    <div class="container">
+      <div class="infoForm"></div>
+    </div>
+    <div>
+      <h3 class="h3">Haga su reserva</h3>
+    </div>
+    <div class="container">
+      <select class="form-select mt-5" id="day">
+        <option selected>Selecciona el día</option>
+        <option value="Lunes">Lunes</option>
+        <option value="Martes">Martes</option>
+        <option value="Miercoles">Miercoles</option>
+        <option value="Jueves">Jueves</option>
+        <option value="Viernes">Viernes</option>
+      </select>
+      
+      <select class="form-select mt-5" id="hr">
+        <option selected>Selecciona la hora</option>
+        <option value="15:00">15:00 Hs</option>
+        <option value="18:00">18:00 Hs</option>
+        <option value="21:00">21:00 Hs</option>
+      </select>
+  
+    <button type="submit" class="btn-reservar btn btn-primary mt-5">Reservar</button>
+      <div class="selector mt-5">Detalles de tu reserva</div>
+  </div>
+  <script src="./JS/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
